@@ -4,10 +4,7 @@ class UserService {
     async createUser(user_name, password) {
         //插入数据   await 表达式：返回的是一个Promise 对象值
         console.log("插入数据" + user_name, password);
-        const res = await User.create({
-            user_name,
-            password
-        })
+        const res = await User.create({ user_name,  password})
         //tode:写入数据库
         return res;
     }

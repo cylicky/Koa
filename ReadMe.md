@@ -27,3 +27,12 @@ npm install sequelize  操作数据库
 
  sequelize  ORM  对象关系映射
  数据表映射（对应）表
+
+
+7 加密
+ npm install bcryptjs
+
+
+ 8 token 颁发
+  npm install jsonwebtoken
+  https://www.npmjs.com/package/jsonwebtoken

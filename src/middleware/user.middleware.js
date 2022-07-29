@@ -34,12 +34,12 @@ const verifyUser = async (ctx, next) => {
     await next();
 }
 
+// 密码加密方法
 const crpyPassword = async (ctx, next) => {
     const { password } = ctx.request.body;
     const salt = bcrypt.genSaltSync(10);
     //hash 保存的是 密文
     const hash = bcrypt.hashSync(password, salt);
-
     ctx.request.body.password = hash;
     await next();
 }
@@ -56,9 +56,9 @@ const verifLogin = async (ctx, next) => {
             ctx.app.emit("error", userDoesNotExist, ctx);
             return;
         }
+
         //2密码是否匹配（不匹配：报错）
         if (!bcrypt.compareSync(password, res.password)) {
-
             ctx.app.emit("error", invalidPassword, ctx);
             return;
         }
@@ -67,12 +67,10 @@ const verifLogin = async (ctx, next) => {
         ctx.app.emit("error", userLoginError, ctx);
         return;
     }
-
-
-
     await next();
 
 }
+
 module.exports = {
     userValidator, verifyUser,
     crpyPassword, verifLogin

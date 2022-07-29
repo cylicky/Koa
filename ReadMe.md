@@ -24,6 +24,7 @@ npm install koa-body    中间件 解析body
 
 6.拆分service 
 npm install sequelize  操作数据库
+https://www.sequelize.com.cn/  中文网
 
  sequelize  ORM  对象关系映射
  数据表映射（对应）表
@@ -31,7 +32,7 @@ npm install sequelize  操作数据库
 
 7 加密
  npm install bcryptjs
-
+https://www.npmjs.com/package/bcryptjs
 
  8 token 颁发
   npm install jsonwebtoken

@@ -37,3 +37,11 @@ https://www.npmjs.com/package/bcryptjs
  8 token 颁发
   npm install jsonwebtoken
   https://www.npmjs.com/package/jsonwebtoken
+
+
+// 上传到本地仓库
+  git  add .
+
+查看状态
+  git status
+

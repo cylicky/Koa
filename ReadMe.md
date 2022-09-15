@@ -45,3 +45,7 @@ https://www.npmjs.com/package/bcryptjs
 查看状态
   git status
 
+git commit -m 'Git学习'  版本说明  暂存区所有文件提交到分支
+
+// 上传到分支
+git push -u origin master

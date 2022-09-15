@@ -33,7 +33,6 @@ const hasAdminPermission = async (ctx, next) => {
         console.error("用户没有管理员权限");
         return ctx.app.emit("error", hasNotAdminPermission, ctx);
     }
-    console.log("信息"+ctx.request);
     await next();
 }
 

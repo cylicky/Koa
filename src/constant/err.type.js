@@ -63,12 +63,12 @@ module.exports = {
     },
     pulishGoodsError: {
         code: '10204',
-        message: "发布商品出错",
+        message: "发布商品失败",
         result: ''
     },
     invalidGoodsID: {
         code: '10205',
-        message: "修改的商品不存在",
+        message: "无效商品ID",
         result: ''
     },
     removepicError: {
@@ -76,9 +76,19 @@ module.exports = {
         message: "下架的文件不存在",
         result: ''
     },
-    putawayError:{
+    putawayError: {
         code: '10207',
         message: "上架的文件已存在",
+        result: ''
+    },
+    cartFormatError: {
+        code: '10301',
+        message: "购物车参数格式错误",
+        result: ''
+    },
+    proDuctError: {
+        code: '10302',
+        message: "清除失败",
         result: ''
     }
 }

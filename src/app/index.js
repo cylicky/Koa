@@ -10,6 +10,8 @@ const errHandler = require("./errHandler");
 const { getUploadDirName, checkDirExist, getUploadFileExt, getUploadFileName } = require("../utils/uploadConfig")
 const app = new Koa();
 
+
+// 检测用户传过来的数据格式
 parameter(app);
 //路由中间键  koaBody要在所有操作之前去运行
 app.use(koaBody({

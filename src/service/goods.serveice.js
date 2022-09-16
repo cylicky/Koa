@@ -38,7 +38,6 @@ class GoodsService {
         //const rows = await Goods.findAll({offset:offset, limit: pageSize * 1 })
         // findAndCountAll 等同于 count+ findAll
         const { count, rows } = await Goods.findAndCountAll({ offset: offset, limit: pageSize * 1 })
-        console.log("123123", rows);
         return {
             pageNum, pageSize, total: count,
             list: rows

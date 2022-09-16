@@ -1,7 +1,7 @@
 const Router = require('koa-router');
 const { verifAmend, hasAdminPermission } = require("../middleware/auth.middleware")
 const { upload, create, update, removepic, offpic, onpic, findAll } = require("../controller/goods.controller");
-const { validator } = require("../middleware/goods.middleware.ware");
+const { validator } = require("../middleware/goods.middleware");
 
 
 const router = new Router({ prefix: "/goods" });
